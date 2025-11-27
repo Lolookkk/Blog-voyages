@@ -1,2 +1,146 @@
 
 /*Reset CSS = pour nous assurer d’avoir un affichage cohérent d’un navigateur à l’autre*/
+
+/* --- RESET SIMPLE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* --- HEADER --- */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    color: #f1c40f;
+}
+
+/* --- SECTIONS --- */
+main section {
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+    border-radius: 12px;
+    background: #f6f6f6;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* --- BANNIÈRE --- */
+#banner {
+    text-align: center;
+    background: linear-gradient(135deg, #3498db, #9b59b6);
+    color: white;
+}
+
+#banner h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#banner p {
+    font-size: 18px;
+}
+
+/* --- SECTION PRINCIPALE (2 BLOCS) --- */
+#principal {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+#principal div {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+#principal img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* --- CONTACT --- */
+#contact {
+    text-align: center;
+}
+
+#contact form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+#contact input {
+    padding: 12px;
+    width: 250px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+#contact button {
+    padding: 12px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#contact button:hover {
+    background: #1d6fa5;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #2c3e50;
+    color: white;
+}
+
+/* --- RESPONSIVE MOBILE --- */
+@media (max-width: 768px) {
+    #principal {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #principal div {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
