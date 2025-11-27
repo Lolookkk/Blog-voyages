@@ -11,8 +11,8 @@
 
 /* --- HEADER --- */
 header {
-    background: #2c3e50;
-    color: white;
+    background: #7a6d4e;
+    color: #e0e0d5;
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
@@ -41,18 +41,21 @@ nav ul li:hover {
 /* --- SECTIONS --- */
 main section {
     padding: 60px 20px;
-    margin: 20px auto;
-    max-width: 1000px;
-    border-radius: 12px;
-    background: #f6f6f6;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 0;
+    max-width: none;
+    border-radius: 0; /*bord droits*/
 }
 
 /* --- BANNIÈRE --- */
 #banner {
     text-align: center;
-    background: linear-gradient(135deg, #3498db, #9b59b6);
-    color: white;
+    background-image: url("./images/banniere.jpg");  /* Image de fond */
+    background-size: cover;        /* L’image couvre toute la bannière */
+    background-position: center;   /* L’image est centrée */
+    background-repeat: no-repeat;  /* Pas de répétition */
+    color: white;                  /* Garde le texte en blanc */
+    /*padding: 100px 20px;*/           /* Hauteur de la bannière */
+    height: 400px;
 }
 
 #banner h1 {
@@ -73,7 +76,7 @@ main section {
 
 #principal div {
     text-align: center;
-    background: white;
+    background: #e0e0d5;
     padding: 20px;
     border-radius: 10px;
     width: 45%;
@@ -103,6 +106,12 @@ main section {
     width: 250px;
     border: 1px solid #aaa;
     border-radius: 6px;
+}
+
+
+
+input.message {
+    height: 200px;
 }
 
 #contact button {
