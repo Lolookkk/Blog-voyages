@@ -38,6 +38,17 @@ nav ul li:hover {
     color: #f1c40f;
 }
 
+nav ul li a {
+    text-decoration: none; /* enlève le souligné */
+    color: #e0e0d5;        /* même couleur que ton header */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f1c40f;        /* couleur au survol */
+}
+
 /* --- SECTIONS --- */
 main section {
     padding: 60px 20px;
@@ -109,10 +120,6 @@ main section {
 }
 
 
-
-input.message {
-    height: 200px;
-}
 
 #contact button {
     padding: 12px 20px;
